@@ -31,3 +31,26 @@ Now, we have seen that we can change the directory to a folder, but can we chang
 
 Well, it turns out we cannot change the directory to a file as a directory literally means "folder".
 
+***
+
+## The `ls` Command
+
+To give a general overview, the `ls` command gives a list of the files or folders stored in the **working directory**. So, if I type `ls` when I am in the `home` directory, I will get: 
+
+![Image](SS7.png)
+
+The output makes sense, as we can see that there is only one "thing" in the `home` directory and that is "lecture1" folder. Now, if I change the directory to lecture1 and type `ls`, we will see each folder and file saved inside the directory.
+
+![Image](SS8.png)
+
+As we can see, each file or folder in lecture1 has been printed in the command line. Now, you may be thinking that do we need to always change directory and then type `ls`. Luckily, we don't need to do that. Just typing `ls` and following that with the folder whose contents we want to see will achieve the same purpose. Here is an example: 
+
+![Image](SS9.png)
+
+See! I am seeing the same output as before, but with just a single command. 
+
+Now, can we use the `ls` command on a file? Let's see. First, I will change the directory to `lecture1` (there is no file in the `home` directory). Then, I will use the `ls` command on `Hello.java` file. 
+
+![Image](SS10.png)
+
+So, the `ls` command just repeats the file name when a file is entered, so it is not particularly useful to view the contents of a file. For this purpose, the `cat` command is more useful. 
