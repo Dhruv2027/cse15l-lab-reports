@@ -57,7 +57,7 @@ So, the `ls` command just repeats the file name when a file is entered, so it is
 
 ***
 
-##The `cat` Command
+## The `cat` Command
 
 The `cat` command stands for "concatenate", which essentially means that it will print out the contents of any number of files one after another. To make this printing happen, I need to enter the file paths right after typing `cat`. So, if I type in `cat` with the path for "Hello.java", here is what I get: 
 
