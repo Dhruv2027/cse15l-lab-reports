@@ -54,3 +54,39 @@ Now, can we use the `ls` command on a file? Let's see. First, I will change the 
 ![Image](SS10.png)
 
 So, the `ls` command just repeats the file name when a file is entered, so it is not particularly useful to view the contents of a file. For this purpose, the `cat` command is more useful. 
+
+***
+
+The `cat` command stands for "concatenate", which essentially means that it will print out the contents of any number of files one after another. To make this printing happen, I need to enter the file paths right after typing `cat`. So, if I type in `cat` with the path for "Hello.java", here is what I get: 
+
+![Image](S11.png)
+
+As you can see, the contents of the file "Hello.java" have been printed. To verify, here are the actual contents of the "Hello.java" file: 
+
+```java
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class Hello {
+  public static void main(String[] args) throws IOException {
+    String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+    System.out.println(content);
+  }
+}
+```
+
+Now, if I want to see the contents of 2 files, I just write the paths of both the files after the `cat` command. Here is an example: `cat <path1> <path2>`. Using the "Hello.java" and "README" files, I'll show an example of concatenating 2 files.
+
+![Image](SS12.png)
+
+Now, what if I type `cat` and write a folder name after it? Will it concatenate every single file in the folder? Let's see: 
+
+![Image](SS13.png)
+
+Oh no! An error message is printed claiming that "cat: lecture1: Is a directory". This is output as the `cat` command is designed to output the contents of files, not concatenate an entire directory. Now, what if we pass no arguements after `cat`?
+
+![Image](SS15.png)
+
+Well, since no arguement is passed, whatever you input will be output back to you. As can be seen in the output above, I wrote "yeah", "todo", and "boo", each of which were repeated. This process will be terminated when "control + D" is pressed. This happens because the command is meant to work with an arguement, so without an arguement, it just repeats whatever the user inputs.
