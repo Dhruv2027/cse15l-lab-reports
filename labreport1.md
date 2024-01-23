@@ -25,33 +25,36 @@ As we can see, `/home/lecture1` is output in the terminal, thus confirming that 
 
 ![Image](SS5.png)
 
-Now, we have seen that we can change the directory to a folder, but can we change it to a file? I will type `cd lecture1` in the terminal and then enter `cd Hello.java` to change the directory to Hello.java.
+Now, we have seen that we can change the directory to a folder, but can we change it to a file? I will type `cd lecture1` in the terminal and then enter `cd Hello.java` to change the directory to `Hello.java`.
 
 ![Image](SS6.png)
 
-There is an error here: `bash: cd: Hello.java: Not a directory`. Well, it turns out we cannot change the directory to a file as a directory literally means "folder".
+There is an error here: `bash: cd: Hello.java: Not a directory`. It turns out we cannot change the directory to a file as a directory literally means "folder".
 
 ***
 
 ## The `ls` Command
 
-To give a general overview, the `ls` command gives a list of the files or folders stored in the **working directory**. So, if I type `ls` when I am in the `home` directory, I will get: 
+To give a general overview, the `ls` command gives a list of the files or folders stored in the **working directory**. So, if I type `ls` when I am in the `/home` directory, I will get:
 
 ![Image](SS7.png)
 
-The output makes sense, as we can see that there is only one "thing" in the `home` directory and that is "lecture1" folder. Now, if I change the directory to lecture1 and type `ls`, we will see each folder and file saved inside the directory.
+The output makes sense, as we can see that there is only one "thing" in the `/home` directory and that is "lecture1" folder. Now, if I change the directory to `lecture1` and type `ls`, we will see each folder and file saved inside the directory.
 
 ![Image](SS8.png)
 
-As we can see, each file or folder in lecture1 has been printed in the command line. Now, you may be thinking that do we need to always change directory and then type `ls`. Luckily, we don't need to do that. Just typing `ls` and following that with the folder whose contents we want to see will achieve the same purpose. Here is an example: 
+As we can see, each file or folder in lecture1 has been printed in the command line. Now, you may be thinking: "do we need to always change directory and then type `ls`?". Luckily, we don't need to do that. Just typing `ls` and following that with the folder whose contents we want to see will achieve the same purpose. Here is an example: 
 
 ![Image](SS9.png)
 
 See! I am seeing the same output as before, but with just a single command. 
 
-Now, can we use the `ls` command on a file? Let's see. First, I will change the directory to `lecture1` (there is no file in the `home` directory). Then, I will use the `ls` command on `Hello.java` file. 
+Now, can we use the `ls` command on a file? Let's see. I will type the command `ls /home/lecture1/Hello.java` to get the following output:
 
-![Image](SS10.png)
+```
+[user@sahara ~]$ ls /home/lecture1/Hello.java
+/home/lecture1/Hello.java
+```
 
 So, the `ls` command just repeats the file name when a file is entered, so it is not particularly useful to view the contents of a file. For this purpose, the `cat` command is more useful. 
 
@@ -59,11 +62,11 @@ So, the `ls` command just repeats the file name when a file is entered, so it is
 
 ## The `cat` Command
 
-The `cat` command stands for "concatenate", which essentially means that it will print out the contents of any number of files one after another. To make this printing happen, I need to enter the file paths right after typing `cat`. So, if I type in `cat` with the path for "Hello.java", here is what I get: 
+The `cat` command stands for "concatenate", which essentially means that it will print out the contents of any number of files one after another. To make this printing happen, I need to enter the file paths right after typing `cat`. So, if I type in `cat /home/lecture1/Hello.java` (`cat` followed by the path for `Hello.java`) here is what I get:
 
 ![Image](S11.png)
 
-As you can see, the contents of the file "Hello.java" have been printed. To verify, here are the actual contents of the "Hello.java" file: 
+As you can see, the contents of the file `Hello.java` have been printed. To verify, here are the actual contents of the `Hello.java` file: 
 
 ```java
 import java.io.IOException;
@@ -79,7 +82,7 @@ public class Hello {
 }
 ```
 
-Now, if I want to see the contents of 2 files, I just write the paths of both the files after the `cat` command. Here is an example: `cat <path1> <path2>`. Using the "Hello.java" and "README" files, I'll show an example of concatenating 2 files.
+Now, if I want to see the contents of 2 files, I just write the paths of both the files after the `cat` command. Here is an example: `cat <path1> <path2>`. Using the `Hello.java` and `README` files, I'll show an example of concatenating 2 files.
 
 ![Image](SS12.png)
 
@@ -87,8 +90,8 @@ Now, what if I type `cat` and write a folder name after it? Will it concatenate 
 
 ![Image](SS13.png)
 
-Oh no! An error message is printed claiming that "cat: lecture1: Is a directory". This is output as the `cat` command is designed to output the contents of files, not concatenate an entire directory. Now, what if we pass no arguements after `cat`?
+Oh no! An error message is printed: `cat: lecture1: Is a directory`. This is output as the `cat` command is designed to output the contents of files, not concatenate an entire directory. Now, what if we pass no arguements after `cat`?
 
 ![Image](SS15.png)
 
-Well, since no arguement is passed, whatever you input will be output back to you. As can be seen in the output above, I wrote "yeah", "todo", and "boo", each of which were repeated. This process will be terminated when "control + D" is pressed. This happens because the command is meant to work with an arguement, so without an arguement, it just repeats whatever the user inputs.
+Well, since no arguement is passed, the `cat` command uses the terminal as an input, so whatever you input will be output back to you. As can be seen in the output above, I wrote "yeah", "todo", and "boo", each of which were repeated. This process will be terminated only when "control + C" is pressed. This happens because the command is meant to work with an arguement, so without an arguement, it just repeats whatever the user inputs.
