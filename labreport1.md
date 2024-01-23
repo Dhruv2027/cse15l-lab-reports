@@ -11,17 +11,17 @@ Now, I will type `cd` in the terminal and get this output:
 
 ![Image](SS2.png)
 
-Reason for this output is that I am in the home directory (folder), ie: the default directory. If I change the working directory (the folder I am in currently) to say, `lecture1` and then enter cd again, I will return to the default `/home` directory.
+Reason for this output is that I am in the home directory (folder), ie: the default directory. If I change the working directory (the folder I am in currently) to say, `/home/lecture1` and then enter `cd` again, I will return to the default `/home` directory. The output is as expected, there is no error in this implementation.
 
-I can enter the `lecture1` directory (folder) by entering the command `cd lecture1`. Here's the output: 
+I can enter the `/home/lecture1` directory (folder) by entering the command `cd lecture1`. Here's the output: 
 
 ![Image](SS3.png)
 
-As we can see, in the terminal `~/lecture1` is written next to `user@sahara`. Thus, it can be seen that the directory has been changed to lecture1. To prove further, I have used the command, `pwd` to print the current (working) directory. 
+As we can see, in the terminal `~/lecture1` is written next to `user@sahara`. Thus, it can be seen that the directory has been changed to `/home/lecture1`. To further check that my directory has changed, I will type `pwd` in the terminal to print the current (working) directory. 
 
 ![Image](SS4.png)
 
-Now, I will type `cd` in the terminal again and this will change the directory back to the `home` directory. 
+As we can see, `/home/lecture1` is output in the terminal, thus confirming that our directory has changed. Now, I will type `cd` in the terminal again and this will change the directory back to the `home` directory. 
 
 ![Image](SS5.png)
 
@@ -29,7 +29,7 @@ Now, we have seen that we can change the directory to a folder, but can we chang
 
 ![Image](SS6.png)
 
-Well, it turns out we cannot change the directory to a file as a directory literally means "folder".
+There is an error here: `bash: cd: Hello.java: Not a directory`. Well, it turns out we cannot change the directory to a file as a directory literally means "folder".
 
 ***
 
