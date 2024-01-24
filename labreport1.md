@@ -13,7 +13,7 @@ Now, I will type `cd` in the terminal and get this output:
 
 Reason for this output is that I am in the home directory (folder), ie: the default directory. If I change the working directory (the folder I am in currently) to say, `/home/lecture1` and then enter `cd` again, I will return to the default `/home` directory. The output is as expected, there is no error in this implementation.
 
-I can enter the `/home/lecture1` directory (folder) by entering the command `cd lecture1`. Here's the output: 
+To enter the `/home/lecture1` directory (folder), I can enter the command `cd lecture1`. Here's the output: 
 
 ![Image](SS3.png)
 
@@ -21,7 +21,7 @@ As we can see, in the terminal `~/lecture1` is written next to `user@sahara`. Th
 
 ![Image](SS4.png)
 
-As we can see, `/home/lecture1` is output in the terminal, thus confirming that our directory has changed. Now, I will type `cd` in the terminal again and this will change the directory back to the `home` directory. 
+As we can see, `/home/lecture1` is output in the terminal, thus confirming that our directory has changed. Now, I will type `cd` in the terminal again and this will change the directory back to the `/home` directory. 
 
 ![Image](SS5.png)
 
@@ -43,7 +43,7 @@ The output makes sense, as we can see that there is only one "thing" in the `/ho
 
 ![Image](SS8.png)
 
-As we can see, each file or folder in lecture1 has been printed in the command line. Now, you may be thinking: "do we need to always change directory and then type `ls`?". Luckily, we don't need to do that. Just typing `ls` and following that with the folder whose contents we want to see will achieve the same purpose. Here is an example: 
+As we can see, each file (Hello.class, Hello.java, README) or folder (messages) in lecture1 has been printed in the command line. Now, you may be thinking: "do we need to always change directory and then type `ls`?". Luckily, we don't need to do that. Just typing `ls` and following that with the folder whose contents we want to see will achieve the same purpose. Here is an example: 
 
 ![Image](SS9.png)
 
@@ -56,7 +56,7 @@ Now, can we use the `ls` command on a file? Let's see. I will type the command `
 /home/lecture1/Hello.java
 ```
 
-So, the `ls` command just repeats the file name when a file is entered, so it is not particularly useful to view the contents of a file. For this purpose, the `cat` command is more useful. 
+So, the `ls` command just repeats the file name when a file is entered, this is not an error. Since `/home/lecture1/Hello.java` is the only file with that path, it is returned to the user. Thus, the `ls` is not particularly useful to view the contents of a file. For this purpose, the `cat` command is more useful. 
 
 ***
 
