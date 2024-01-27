@@ -8,11 +8,11 @@
 # Part 2
 In the screenshot below, I have used the command `ssh-keygen` to create a public/private key pair. 
 
-![Image](cse15l-lab-reports/labreport2/SS1.png)
+![Image](labreport2/SS1.png)
 
 As can be seen in the screenshot, my private key has been saved in the path `/Users/dhruvsharma/.ssh/id_rsa` and my public key has been saved in the path `/Users/dhruvsharma/.ssh/id_rsa.pub`. This means that the keys are stored in a folder named `.ssh` with the path `/Users/dhruvsharma/.ssh`.
 
-![Image](cse15l-lab-reports/labreport2/SS2.png)
+![Image](labreport2/SS2.png)
 
 While on my local terminal, I, using the `scp` command, I securely copied my `id_rsa.pub` key into the `~/.ssh/authorized_keys` folder in `ieng6`. Next, I just entered the regular command to ssh into the `ieng6` account, `ssh d4sharma@ieng6.ucsd.edu`. As can be seen, I did not need to enter the password in this interaction. 
 ***
