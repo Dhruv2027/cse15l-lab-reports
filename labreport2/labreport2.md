@@ -1,8 +1,44 @@
 # Lab Report 2
 ***
 # Part 1
+```java
+import java.io.IOException;
+import java.net.URI;
+import java.util.*;
 
+class Handler implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    // int num = 0;
+    ArrayList<String> string = new ArrayList<>();
+    ArrayList<String> name = new ArrayList<>();
+    String script = "";
 
+    public String handleRequest(URI url) {
+        if (url.getPath().contains("/add")) {
+            String[] parameters = url.getQuery().split("&");
+            script += parameters[1].split("=")[1] + ": "+ parameters[0].split("=")[1] + '\n';
+            return script;
+        }
+    
+        return "404 Not Found!";
+    }
+}
+
+class ChatServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
+In the code, I am storing whatever is added in the query part of the URL in the 
 
 ***
 # Part 2
