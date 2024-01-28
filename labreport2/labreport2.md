@@ -50,6 +50,14 @@ In the above screenshot, at the end of the URL, I typed `/add-message?s=Hello&us
 * The handleRequest method uses the URL as a parameter and splits the query at the `&` character. The results of the split are stored in the parameters array. This elements of this array are then split again at the `=` character so that the user and their message can be output. This result is stored in the variable `script`.
 * When the `/add-message?s=Hello&user=Dhruv` request is made, the script variable is updated from `script = ""` to `script = Dhruv: Hello`.
 
+![Image](SS4.png)
+
+In the above screenshot, at the end of the URL, I typed  `/add-message?s=How are you&user=Yash`. When I press enter, the page is reloaded and the java code runs in the background. 
+
+* This time, the handleRequest method is called as the request has been updated. None of the other methods are required as the website is already up and running.
+* As before, the only relevant arguements to this method is the URL, so that the query can be split and the user along with their message, can be retrieved.
+* As a result of the update, the `script` variable is also updated to `Dhruv: Hello \n Yash: How+are+you`. There are pluses in between the spaces here as the URL cannot have empty spaces between characters, so it fills them with special characters, resulting in the "+" signs.
+
 ***
 ## Part 2
 In the screenshot below, I have used the command `ssh-keygen` to create a public/private key pair. 
