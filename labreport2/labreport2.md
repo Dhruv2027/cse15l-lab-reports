@@ -1,5 +1,6 @@
 # Lab Report 2
 ***
+In the code below, I am storing the string after `s=` and `user=` in the variable `script`. Each time `add-message` is written, the script variable is updated with the new values and is output. 
 ## Part 1
 ```java
 import java.io.IOException;
@@ -38,14 +39,16 @@ class ChatServer {
     }
 }
 ```
-In the code, I am storing the string after `s=` and `user=` in the variable `script`. Each time `add-message` is written, the script variable is updated with the new values and is output. Here are two examples of when I use `add-message`.
 
-![Image] (SS3.png)
+Here are two examples of me using the code to add messages on the website:
+
+![Image](SS3.png)
 
 In the above screenshot, at the end of the URL, I typed `/add-message?s=Hello&user=Dhruv`. When I press enter, the page is reloaded and the java code runs in the background. The java code contains some methods, whose functionality I will explain below: 
 
 * First, the main method in ChatServer runs, taking an integer input as the port. Next, the code uses another java file named Server.java with which a new server is created, taking the port and an object of type `Handler`. As `Handler` is called, the method 'handleRequest` is called to split the query into the parts we need, ie: the user's name and their message.
-* 
+* The handleRequest method uses the URL as a parameter and splits the query at the `&` character. The results of the split are stored in the parameters array. This elements of this array are then split again at the `=` character so that the user and their message can be output. This result is stored in the variable `script`.
+* When the `/add-message?s=Hello&user=Dhruv` request is made, the script variable is updated from `script = ""` to `script = Dhruv: Hello`.
 
 ***
 ## Part 2
