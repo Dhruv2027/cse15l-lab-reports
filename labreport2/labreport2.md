@@ -53,9 +53,9 @@ In the above screenshot, at the end of the URL, I typed `/add-message?s=Hello&us
 
 In the above screenshot, at the end of the URL, I typed  `/add-message?s=How are you&user=Yash`. When I press enter, the page is reloaded and the java code runs in the background. 
 
-* This time, the handleRequest method is called as the request has been updated. None of the other methods are required as the website is already up and running.
-* As before, the only relevant arguements to this method is the URL, so that the query can be split and the user along with their message, can be retrieved.
-* As a result of the update, the `script` variable is also updated to `Dhruv: Hello \n Yash: How+are+you`. There are pluses in between the spaces here as the URL cannot have empty spaces between characters, so it fills them with special characters, resulting in the "+" signs.
+* **Methods called**: This time, the `handleRequest()` method is called as the request has been updated. Again, the query is split along the `&` character and stored in the parameters array. The resultant parameters are again split along `=` using the aforementioned helper methods. None of the other methods are required as the website is already up and running.
+* **Relevant Arguements**: As before, the only relevant arguements to this method is the URL, so that the query can be split and the user along with their message, can be retrieved.
+* **Value Changes**: As a result of the update, the `script` variable is also updated to `Dhruv: Hello \n Yash: How+are+you`. The parameters array is updated to contain "Yash" and "How+are+you". There are pluses in between the spaces here as the URL cannot have empty spaces between characters, so it fills them with special characters, resulting in the "+" signs. 
 
 ***
 ## Part 2
