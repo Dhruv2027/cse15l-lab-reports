@@ -11,12 +11,10 @@ class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     // int num = 0;
-    ArrayList<String> string = new ArrayList<>();
-    ArrayList<String> name = new ArrayList<>();
     String script = "";
 
     public String handleRequest(URI url) {
-        if (url.getPath().contains("/add")) {
+        if (url.getPath().contains("/add-mesage")) {
             String[] parameters = url.getQuery().split("&");
             script += parameters[1].split("=")[1] + ": "+ parameters[0].split("=")[1] + '\n';
             return script;
@@ -46,9 +44,10 @@ Here are two examples of me using the code to add messages on the website:
 
 In the above screenshot, at the end of the URL, I typed `/add-message?s=Hello&user=Dhruv`. When I press enter, the page is reloaded and the java code runs in the background. The java code contains some methods, whose functionality I will explain below: 
 
-* First, the main method in ChatServer runs, taking an integer input as the port. Next, the code uses another java file named Server.java with which a new server is created, taking the port and an object of type `Handler`. As `Handler` is called, the method 'handleRequest` is called to split the query into the parts we need, ie: the user's name and their message.
-* The handleRequest method uses the URL as a parameter and splits the query at the `&` character. The results of the split are stored in the parameters array. This elements of this array are then split again at the `=` character so that the user and their message can be output. This result is stored in the variable `script`.
-* When the `/add-message?s=Hello&user=Dhruv` request is made, the script variable is updated from `script = ""` to `script = Dhruv: Hello`.
+* **Methods called**: First, the main method in ChatServer runs, taking an integer input as the port. Next, the above code uses another java file named Server.java with which a new server is created, taking the port and an object of type `Handler`. As `Handler` is called, the method 'handleRequest` is called to split the query into the parts we need, ie: the user's name and their message. Other helper methods like `getPath()`,`getQuery()`, `contains()`, `split()`, and `Integer.parseInt()` are used to help retrieve the relevant parts of the URL.
+* **Relevant Arguements**: The `handleRequest()` method uses the URL as the parameter. The URL is then checked if it contains the `add-message` string using the `contains()`
+ method. Then, using the `split()` method, query is split at the `&` character. The results of the split are stored in the parameters array. This elements of this array are then split again at the `=` character so that the user and their message can be output. This result is stored in the variable `script`.
+* **Value Changes**: When the `/add-message?s=Hello&user=Dhruv` request is made, the script variable is updated from `script = ""` to `script = Dhruv: Hello` using the methods above. Furthermore, the parameters array is updated each time `handleRequest()` is called, so the value of `script` is updated to show the new output.
 
 ![Image](SS4.png)
 
