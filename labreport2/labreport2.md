@@ -67,12 +67,12 @@ As can be seen in the screenshot, my private key has been saved in the path `/Us
 
 ![Image](SS2.png)
 
-While on my local terminal, I, using the `scp` command, I securely copied my `id_rsa.pub` key into the `~/.ssh/authorized_keys` file in `ieng6`. The screenshot below shows that my public key is stored in the `/home/linux/ieng6/oce/12/d4sharma/.ssh` directory along with other files like `authorized_keys`.
+While on my local terminal, I, using the `scp` command, I securely copied my `id_rsa.pub` key into the `~/.ssh/authorized_keys` file in `ieng6`. Next, I just entered the regular command to ssh into the `ieng6` account, `ssh d4sharma@ieng6.ucsd.edu`. As can be seen, I did not need to enter the password in this interaction. 
+
+In the screenshot below, it can be seen that my `id_rsa.pub` key is stored in the `/home/linux/ieng6/oce/12/d4sharma/.ssh` directory along with other files like `authorized_keys`.
 
 ![Image](SS5.png)
 
-
-Next, I just entered the regular command to ssh into the `ieng6` account, `ssh d4sharma@ieng6.ucsd.edu`. As can be seen, I did not need to enter the password in this interaction. 
 ***
 ## Part 3
 Over the past few weeks, I learnt how to connect to a server using `ssh`. I had heard of the term `ssh` but had no idea what it did. After coming into the class I realised exactly what each of the commands do and how the terminal works (atleast on a surface level). Over the last couple of weeks I also learnt aboout how websites can be created and watch its contents change using java by writing commands in the URL. These concepts are very new to me, so was a good learning opportunity. Furthermore, I learnt about URL and its specific parts. The only part I knew prior to the course was the domain, but now I can see that there are many parts to the URL like the query, anchor, etc. I also did not realise that the URL itself was a kind of path to the content we want to view.
