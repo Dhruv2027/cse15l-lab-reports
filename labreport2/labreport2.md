@@ -44,7 +44,7 @@ Here are two examples of me using the code to add messages on the website:
 
 In the above screenshot, at the end of the URL, I typed `/add-message?s=Hello&user=Dhruv`. When I press enter, the page is reloaded and the java code runs in the background. The java code contains some methods, whose functionality I will explain below: 
 
-* **Methods called**: First, the main method in ChatServer runs, taking an integer input as the port. Next, the above code uses another java file named Server.java with which a new server is created, taking the port and an object of type `Handler`. As `Handler` is called, the method 'handleRequest` is called to split the query into the parts we need, ie: the user's name and their message. Other helper methods like `getPath()`,`getQuery()`, `contains()`, `split()`, and `Integer.parseInt()` are used to help retrieve the relevant parts of the URL.
+* **Methods called**: First, the main method in ChatServer runs, taking an integer input as the port. Next, the above code uses another java file named Server.java with which a new server is created, taking the port and an object of type `Handler`. As `Handler` is called, the method `handleRequest` is called to split the query into the parts we need, ie: the user's name and their message. Other helper methods like `getPath()`,`getQuery()`, `contains()`, `split()`, and `Integer.parseInt()` are used to help retrieve the relevant parts of the URL.
 * **Relevant Arguements**: The `handleRequest()` method uses the URL as the parameter. The URL is then checked if it contains the `add-message` string using the `contains()`
  method. Then, using the `split()` method, query is split at the `&` character. The results of the split are stored in the parameters array. This elements of this array are then split again at the `=` character so that the user and their message can be output. This result is stored in the variable `script`.
 * **Value Changes**: When the `/add-message?s=Hello&user=Dhruv` request is made, the script variable is updated from `script = ""` to `script = Dhruv: Hello` using the methods above. Furthermore, the parameters array is updated each time `handleRequest()` is called, so the value of `script` is updated to show the new output.
@@ -67,7 +67,12 @@ As can be seen in the screenshot, my private key has been saved in the path `/Us
 
 ![Image](SS2.png)
 
-While on my local terminal, I, using the `scp` command, I securely copied my `id_rsa.pub` key into the `~/.ssh/authorized_keys` folder in `ieng6`. Next, I just entered the regular command to ssh into the `ieng6` account, `ssh d4sharma@ieng6.ucsd.edu`. As can be seen, I did not need to enter the password in this interaction. 
+While on my local terminal, I, using the `scp` command, I securely copied my `id_rsa.pub` key into the `~/.ssh/authorized_keys` file in `ieng6`. The screenshot below shows that my public key is stored in the `/home/linux/ieng6/oce/12/d4sharma/.ssh` directory along with other files like `authorized_keys`.
+
+![Image](SS5.png)
+
+
+Next, I just entered the regular command to ssh into the `ieng6` account, `ssh d4sharma@ieng6.ucsd.edu`. As can be seen, I did not need to enter the password in this interaction. 
 ***
 ## Part 3
 Over the past few weeks, I learnt how to connect to a server using `ssh`. I had heard of the term `ssh` but had no idea what it did. After coming into the class I realised exactly what each of the commands do and how the terminal works (atleast on a surface level). Over the last couple of weeks I also learnt aboout how websites can be created and watch its contents change using java by writing commands in the URL. These concepts are very new to me, so was a good learning opportunity. Furthermore, I learnt about URL and its specific parts. The only part I knew prior to the course was the domain, but now I can see that there are many parts to the URL like the query, anchor, etc. I also did not realise that the URL itself was a kind of path to the content we want to view.
