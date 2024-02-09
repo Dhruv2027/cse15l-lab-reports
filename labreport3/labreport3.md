@@ -76,3 +76,4 @@ OK (2 tests)
 
 ***
 ## Part 2 - Researching Commands
+I will be talking about the `grep` command. 
