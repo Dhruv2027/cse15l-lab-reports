@@ -38,3 +38,41 @@ public void testReversed() {
 ```
 The test works perfectly. When there is no input, the program correctly returns no array, thus passing the test.
 
+![Image](SS1.png)
+
+As can be seen in the above screenshot, 2 tests are run with one passing and one failing. The symptom here is that something that was expected is not mirrored in what was actually produced. The test expected the value of 3, but got a value of 0. The bug here is that the new array which is to be returned is not getting reversed. Instead, each value in the original array is being replaced with 0. To fix the error, I updated the old code to remove the bug.
+
+```java
+//old, buggy code
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = newArray[arr.length - i - 1];
+  }
+  return arr;
+}
+
+//new, bug-less code
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    newArray[i] = arr[arr.length - i - 1];
+  }
+  return newArray;
+}
+```
+
+All I changed here was replacing the `arr` on the left hand side with `newArray` and `newArray` on the right with `arr`. This fixes the code as when I run the java test again, I get the following output: 
+
+```
+(base) dhruvsharma@Dhruvs-MacBook-Pro-2 lab3 % javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java                              
+(base) dhruvsharma@Dhruvs-MacBook-Pro-2 lab3 % java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ArrayTests
+JUnit version 4.13.2
+..
+Time: 0.014
+
+OK (2 tests)
+```
+
+***
+## Part 2 - Researching Commands
