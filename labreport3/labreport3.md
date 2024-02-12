@@ -76,4 +76,52 @@ OK (2 tests)
 
 ***
 ## Part 2 - Researching Commands
-I will be talking about the `grep` command. 
+I will be talking about the `grep` command. I will explore how the `-i`, `-r`, `-n`, and `"[A-Z]"` commands in `grep` work. I am starting from the `/docsearch/` directory and will change the directory to `/docsearch/technical/` and search for the files in the `plos` folder.
+
+### `grep -i` function
+
+I entered the command `grep -i "plos" plos/pmed.0020203.txt` while in the `/docsearch/technical/` directory to search for each occurrence of the `plos` keyword in the file `pmed.0020203.txt`. The output I received is shown below: 
+
+```
+dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep -i "plos" plos/pmed.0020203.txt 
+      PLoS Medicine is a sufficiently new journal that we are often doing
+      PLoS Medicine ? Although our journal's focus is on human studies, we have
+      PLoS Medicine . These include studies that explore off-label uses of
+      PLoS Medicine . Instead, we encourage submission of important advances
+      PLoS Biology , our flagship open-access biology journal
+      (www.plosbiology.org).
+      PLoS Medicine has published a number of Perspectives on research articles
+      PLoS Biology , and 
+      PLoS Biology regularly highlights papers from 
+      PLoS Medicine on its home page. In this way, because all our journals are
+      PLoS Medicine and any other PLoS journal, is just a rodent click.
+```
+
+Here, each line of the output shows the line where the keyword "plos" is used. This function is particularly useful as the developer may never know when the keyword has been capitalized or has a mix of capital letters and non capital letters. The `-i` function removes this uncertainty as it gives an output regardless of capitalisation. 
+
+In the next scenario, it may be beneficial to find out which part of the document in `government/About_LSC/ODonnell_et_al_v_LSCdecision.txt` contains the word "legal" as part of the arguement or if it is part of a legal services company. It makes searching for the context of the word "legal" a lot easier. The output: 
+
+```
+dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep -i "legal" government/About_LSC/ODonnell_et_al_v_LSCdecision.txt 
+HUGH F. O'DONNELL, Executive � Director of Client Centered Legal
+Services of Southwest Virginia, Incorporated; CLIENT CENTERED LEGAL
+JOHN EIDLEMAN, Program Specialist for the Legal Services
+Corporation; LEGAL SERVICES CORPORATION; JOHN MCKAY, President of
+the Legal Services Corporation,
+Client Centered Legal Services of Southwest Virginia,
+granting judgment in favor of the Legal Services Corporation and
+In 1974, Congress enacted the Legal Service Corporation Act
+("LSCA"), which created the LSC for the purpose of providing legal
+2996 (West 1994). The LSC does not itself provide legal services,
+but rather grants federal funds to legal services programs across
+the country. CCLS, which provides legal services to indigent people
+In our recent decision in Regional Management Corp. v. Legal
+specifically intended the LSCA to benefit "indigents who have legal
+grievances but who are unable to afford the legal means necessary
+the "especial benefit" of indigent persons in need of legal
+services. Although legal services programs such as CCLS are an
+affect grantees. See Tex. Rural Legal Aid, Inc. v. Legal Servs.
+(D.C. Cir. 1991); San Juan Legal Servs., Inc. v. Legal Servs.
+Corp., 655 F.2d 434, 438-39 (1st Cir. 1981); Spokane County Legal
+Servs., Inc. v. Legal Servs. Corp., 614 F.2d 662, 668-69 (9th Cir.
+```
