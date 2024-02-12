@@ -467,3 +467,169 @@ dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep -r "chapter" .
 ./911report/chapter-11.txt:                capabilities were in the domestic arena. In chapter 3 we discussed these
 ./911report/chapter-11.txt:                Kuala Lumpur, detailed in chapter 6. In late 1999, the National Security Agency
 ```
+
+### `grep [<arguement>] path`
+
+
+```
+dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep "[Z]" plos/pmed.0020067.txt 
+Although benzimidazoles (BZAs) are the most commonly used agents for treating STH
+repeated deworming with BZAs and praziquantel, complemented by basic sanitation and
+benefits from BZAs in both populations [16,25]. Finally, a single dose of mebendazole (one
+of the two major BZAs) has variable efficacy against hookworm [26], and following
+with frequent and repeated use, has prompted concerns about the possible emergence of BZA
+Medicine, and Oswaldo Cruz Foundation (FIOCRUZ), and sponsored by the Sabin Vaccine
+```
+
+
+```
+dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep "[Z]" plos/*                     
+plos/journal.pbio.0020040.txt:        lacZ reporter gene in transgenic mice. Venkatachalam and colleagues
+plos/journal.pbio.0020046.txt:        in all cultures and ethnic groups (Andrews et al. 1983; Zimmermann et al. 1983), although
+plos/journal.pbio.0020046.txt:        While this model has failed to explain the core symptoms of stuttering (Zimmermann et al.
+plos/journal.pbio.0020053.txt:        (trade-named Zyvox), which is effective against some resistant strains of 
+plos/journal.pbio.0020054.txt:        Mountain Research Center in Fort Collins, Colorado, meteorologist Karl Zeller and
+plos/journal.pbio.0020054.txt:        Zeller's group has analyzed current mesoscale forecasts in the Rocky Mountains and found
+plos/journal.pbio.0020054.txt:        Water vapor estimates are too low in the mountains and too high in the plains, which Zeller
+plos/journal.pbio.0020054.txt:        models, Zeller says “point forecasts” are being developed that can focus on a prescribed
+plos/journal.pbio.0020064.txt:        field, including collaborators Charles Zuker (University of California, San Diego [UCSD],
+plos/journal.pbio.0020064.txt:        explains Zuker, who previously worked on other sensory systems in flies, ‘there was a
+plos/journal.pbio.0020064.txt:        and, subsequently, a whole family of T2Rs’, says Zuker.
+plos/journal.pbio.0020064.txt:        All these receptors, says Zuker, are coexpressed in bitter taste receptor cells, a
+plos/journal.pbio.0020064.txt:        to different bitter molecules. ‘To me’, says Zuker, ‘it makes sense that all the bitter
+plos/journal.pbio.0020064.txt:        concentrations of natural sugars only. All sweet detection, concludes Zuker, is via the
+plos/journal.pbio.0020064.txt:        Zuker, however, believes that the one and only umami receptor is a heterodimer of T1R1 and
+plos/journal.pbio.0020064.txt:        T1R3. In October 2003, Zuker and his coworkers reported that mice in which either T1R1 or
+plos/journal.pbio.0020064.txt:        Zuker, meanwhile, is not convinced that the current ion channel candidates for salt and
+plos/journal.pbio.0020064.txt:        Zuker and Ryba's recent work strongly suggests that taste-coding for bitter, sweet, and
+plos/journal.pbio.0020064.txt:        These data, says Zuker, support the labelled-line model.
+plos/journal.pbio.0020064.txt:        The latest data supporting the labelled-line model came last October when Zuker and
+plos/journal.pbio.0020067.txt:        Wilkins' first six years in New Zealand (a Garden of Eden) were followed by a long,
+plos/journal.pbio.0020100.txt:        resources and the powerful RNA interference (RNAi) technique (Hutvágner and Zamore 2002).
+plos/journal.pbio.0020113.txt:        open up the 200-mile (322-km) United States Exclusive Economic Zone to net pens seaward of
+plos/journal.pbio.0020133.txt:        (Zamore et al. 2000; Elbashir et al. 2001); identified RISC (RNA-induced silencing
+plos/journal.pbio.0020133.txt:        been found in plants (Zilberman et al. 2003) and 
+plos/journal.pbio.0020146.txt:        functional (Young et al. 2002; Zhang and Firestein 2002), whereas humans have only some 350
+plos/journal.pbio.0020146.txt:        functional genes of approximately 1,000 (Glusman et al. 2001; Zozulya et al. 2001). The
+plos/journal.pbio.0020148.txt:        awarded 12 million Euros to the ZF-MODELS research consortium to study zebrafish models for
+plos/journal.pbio.0020148.txt:        more than 3,000 researchers are listed on ZFIN, a United States–based information resource
+plos/journal.pbio.0020148.txt:        Biology, Tübingen, Germany), project manager of the ZF-MODELS consortium, ‘were the first
+plos/journal.pbio.0020148.txt:        ZF-MODELS participant. ‘From Wolfgang's lab, I was able to take the mutations that affected
+plos/journal.pbio.0020148.txt:        and are now starting a third screen of 6,000 genomes as part of the ZF-MODELS project.
+plos/journal.pbio.0020148.txt:        What Else Will ZF-MODELS Do?
+plos/journal.pbio.0020148.txt:        The ZF-MODELS consortium, which is funded under the European Union's Sixth Framework
+plos/journal.pbio.0020148.txt:        female fish, explains Stemple, whose group is one of three ZF-MODELS partners who will use
+plos/journal.pbio.0020148.txt:        In another strand of the ZF-MODELS project, zebrafish expressing green fluorescent
+plos/journal.pbio.0020148.txt:        A final, important aspect of the ZF-MODELS project, adds Dahm, is database construction.
+plos/journal.pbio.0020148.txt:        explains. ‘In addition, we hope to integrate our data with that of ZFIN in the United
+plos/journal.pbio.0020148.txt:        The researchers of the ZF-MODELS consortium are understandably excited about
+plos/journal.pbio.0020148.txt:        by the ZF-MODELS project. ‘We need big lab models like ZF-MODELS in developmental biology’,
+plos/journal.pbio.0020148.txt:        consortium, adds Howard Hughes Medical Institute Investigator Leonard Zon (Harvard Medical
+plos/journal.pbio.0020148.txt:        mutants to find all those that affect the development of a single organ. When Zhaoxia Sun,
+plos/journal.pbio.0020148.txt:        A Proliferation of Zebrafish Models of Human Disease
+plos/journal.pbio.0020148.txt:        Over the past three to four years, says Zon, this area of research has become a growth
+plos/journal.pbio.0020148.txt:        morpholinos to knock out specific genes, and the advent of TILLING, says Zon, ‘has set off
+plos/journal.pbio.0020148.txt:        Zon has worked on disease models for blood (Figure 4), blood vessel, and heart disorders
+plos/journal.pbio.0020148.txt:        adults’. Now Zon and his colleagues have returned to the cell-cycle mutant that yielded
+plos/journal.pbio.0020148.txt:        molecules, reasons Zon, may have potential as anticancer drugs.
+plos/journal.pbio.0020148.txt:        And the Future of Zebrafish Research?
+plos/journal.pbio.0020148.txt:        Bigger and bigger seems to be the consensus. Chemical screens like Zon's for anticancer
+plos/journal.pbio.0020148.txt:        ZF-MODELS
+plos/journal.pbio.0020148.txt:        ZFIN
+plos/journal.pbio.0020148.txt:        The ZFIN Web site, at http://z.n.org/ZFIN, provides an extensive database for the
+plos/journal.pbio.0020190.txt:        C. elegans (Zickler and Kleckner 1999; MacQueen et al. 2002;
+plos/journal.pbio.0020206.txt:        their ancestral amino-acid sequence (Zhang et al. 2003). A convincing instance of
+plos/journal.pbio.0020206.txt:        EDN (a ribonuclease) some 30 MYA (Zhang et al. 1998). The divergence of
+plos/journal.pbio.0020214.txt:        Cancer Research (LICR) based jointly in Zurich, New York, and London, and the Belozersky
+plos/journal.pbio.0020216.txt:        the spectrum (Autrum and von Zwehl 1964). Their excellent colour vision is optimal for
+plos/journal.pbio.0020232.txt:        ALK3 (Z22535), and 
+plos/journal.pbio.0020232.txt:        ALK3 (Z23154).
+plos/journal.pbio.0020241.txt:        mouse, which developed type 1 diabetes, and the hybrid between the New Zealand Black (NZB)
+plos/journal.pbio.0020241.txt:        and the New Zealand White (NZW) mouse, (NZB × NZW)F1, which developed a lupus-like
+plos/journal.pbio.0020306.txt:        Paris, France and Stazione Zoologica, Napoli, Italy) explains that molecular phylogeny and
+plos/journal.pbio.0020311.txt:        the transcription factors BES1 and BZR1, targeting them for proteolysis by the 26S
+plos/journal.pbio.0020311.txt:        proteasome. Upon a BR stimulus, BIN2 is inactivated, allowing BES1 and BZR1to accumulate in
+plos/journal.pbio.0020347.txt:        context for the paper by Gur and Zamir in this issue of 
+plos/journal.pbio.0020347.txt:        PLoS Biology (Gur and Zamir 2004). I will discuss how “smart breeding”
+plos/journal.pbio.0020347.txt:        segments from a wild relative, as reported by Gur and Zamir (2004). The effect of these
+plos/journal.pbio.0020347.txt:        1996; Ghesquiere et al. 1997; Ahn et al. 2002], tomato [Monforte and Tanksley 2000; Zamir
+plos/journal.pbio.0020347.txt:        2001), including one of the yield QTLs targeted by Gur and Zamir (Fridman et al. 2000).
+plos/journal.pbio.0020347.txt:        success of the cultivar development scheme described by Zamir and Gur (2004), there is
+plos/journal.pbio.0020353.txt:        Committee 2004). United States National Institutes of Health (NIH) Director Elias Zerhouni
+plos/journal.pbio.0020353.txt:        hosted by Dr. Zerhouni. All told, the current spate of government attention to the issue of
+plos/journal.pbio.0020354.txt:        (e.g., Russo et al. 1996; Zardoya and Meyer 1996; Naylor and Brown 1997). Finally, while
+plos/journal.pbio.0020354.txt:        and among described species (Klicka and Zink 1997; Avise and Walker 1998; Johnson and
+plos/journal.pbio.0020354.txt:        well as previous studies (e.g., Klicka and Zink 1997). For 39 pairs of avian sister
+plos/journal.pbio.0020354.txt:        (Zink 1996, Zink et al. 2001). If there is significant variation, assessment of
+plos/journal.pbio.0020400.txt:        encounter peroxide stress (Zheng et al. 1998; Aslund et al. 1999). Disulfide bond formation
+plos/journal.pbio.0020400.txt:        (Zn
+plos/journal.pbio.0020400.txt:        The added complexity of the cysteine targets that compose part of a Zn binding site
+plos/journal.pbio.0020400.txt:        found for Hsp33 and RsrA raises questions about the function of the zinc. Perhaps Zn
+plos/journal.pbio.0020400.txt:        reductase activity (Collet et al. 2003). Thus, the way this oxidatively labile Zn site
+plos/journal.pbio.0020401.txt:        facilitated by the observation that the protein contains a RING finger (Zhang et al. 2000),
+plos/journal.pbio.0020406.txt:        et al. 2004; but see also Zapata et al. 2003). It is deviation from the mid-domain
+plos/journal.pbio.0020419.txt:        et al. 1996; Blomer et al. 1997; Bellugi et al. 1999; Pfeifer et al. 2001; Zhao et al.
+plos/journal.pbio.0020419.txt:        identified neurons are coming (Guerrero and Isacoff 2001; Zemelman and Miesenbock 2001;
+plos/journal.pbio.0020440.txt:        researchers from Princeton University and the Institute of Zoology in London, published a
+plos/journal.pbio.0030021.txt:        in which either the female (ZW/ZZ) or the male (XX/XY) is heterogametic, are common, as are
+plos/journal.pbio.0030050.txt:        relatives are emerging from the work of neuroscientist Karl Zilles (Institute of Medicine,
+plos/journal.pbio.0030050.txt:        evolution”. Zilles and his colleagues also are currently using molecular imaging techniques
+plos/journal.pbio.0030050.txt:        chimpanzees. Already, Zilles has discovered that there is much more interindividual
+plos/journal.pbio.0030050.txt:        variation in human brain organisation than anyone suspected. This means, says Zilles, “that
+plos/journal.pbio.0030050.txt:        those of other mammals and primates, although work by Zilles and others is helping here. We
+plos/journal.pbio.0030056.txt:        New Zealand giant had a wingspan of up to three metres and a weight of around 14 kilograms,
+plos/journal.pbio.0030056.txt:        ago, he and his colleagues estimate [5]. “It means an eagle arrived in New Zealand and
+plos/journal.pbio.0030065.txt:        and a protein name, but we always run into Zipf's law whenever we write down the rules for
+plos/journal.pbio.0030065.txt:        variability of language described by Zipf's law. At present, no computer-based system comes
+plos/journal.pbio.0030105.txt:        by the conference organizer, Semir Zeki [University College London]). But the richness of
+plos/pmed.0020002.txt:        Lower Sonoran Life Zone [2]. This semiarid zone encompasses the southern parts of Texas,
+plos/pmed.0020016.txt:          to greater behavior change than in Kenya or Zambia where most people received information
+plos/pmed.0020017.txt:          All specimens were reviewed by a single reference pathologist (M. F. Z.). Imaging
+plos/pmed.0020018.txt:        α-secretase processing of APP. Soon thereafter, ROCK1 was discovered by Zhou et al. [28] to
+plos/pmed.0020034.txt:        change have been dramatically different in New Zealand and Scotland (from ~2% up to 20%)
+plos/pmed.0020034.txt:        mortality has only come from the United Kingdom, New Zealand, and the United States,
+plos/pmed.0020034.txt:        Kingdom, or New Zealand.
+plos/pmed.0020034.txt:        sensitization. Homes in Sweden, Berlin, the United Kingdom, and New Zealand have
+plos/pmed.0020034.txt:        family. Furthermore, the presence of a cat in a house in New Zealand does not decrease IgE
+plos/pmed.0020034.txt:        cat, and also to birch and dog. However, in the United States and New Zealand, the presence
+plos/pmed.0020040.txt:            on a thiazolidinedione (TZD) QD. With continued elevated systolic BP >130 mm Hg and
+plos/pmed.0020040.txt:          last six months. His medications include metformin at 1 g BID, a TZD BID, and an ACE-I
+plos/pmed.0020040.txt:            oral agent after maximizing the doses of metformin and TZD, or he could begin insulin
+plos/pmed.0020040.txt:        medications in patients with suboptimal glycemia [21]. The class of TZDs works to lower
+plos/pmed.0020040.txt:        plasma glucose levels by increasing insulin sensitivity in muscle and liver [22]. TZDs
+plos/pmed.0020040.txt:        Heart Association class III or IV heart failure should not use TZDs [24,25].
+plos/pmed.0020045.txt:        hyperglycemic mouse models of type 1 (streptozotocin [STZ]) and type 2 (db/db) diabetes, we
+plos/pmed.0020045.txt:          db/db , STZ-treated C57BL/6J, or STZ-treated 129SvJ mice and from
+plos/pmed.0020045.txt:          provided by Fuad Ziyadeh (University of Pennsylvania, Philadelphia, Pennsylvania, United
+plos/pmed.0020045.txt:          protocol. Activity was normalized to total protein content. Z-DEVD-fmk, z-VAD-fmk,
+plos/pmed.0020045.txt:          (db/db mice) for 20 wk (Figure 2A), or type 1 diabetes (STZ-treated C57BL/6J mice) for 20
+plos/pmed.0020045.txt:          mouse kidneys (Figure 2E). The diabetic mouse group included 24-wk-old STZ-treated
+plos/pmed.0020045.txt:        previous reports demonstrating tubular apoptosis in kidneys of STZ-treated diabetic rats
+plos/pmed.0020050.txt:        upon a variety of assumptions) for the province of KwaZulu–Natal. We also discuss how our
+plos/pmed.0020050.txt:        Our current analysis is applied to the South African province of KwaZulu–Natal, although
+plos/pmed.0020050.txt:        our methodology could be applied to any resource-constrained setting. KwaZulu–Natal is the
+plos/pmed.0020050.txt:        province of KwaZulu–Natal; we exclude communities with a population of less than 500
+plos/pmed.0020050.txt:        each community receive treatment. To apply our theoretical framework to KwaZulu–Natal we
+plos/pmed.0020050.txt:        would change if all 54 hospitals in KwaZulu–Natal were operational for the rollout of
+plos/pmed.0020050.txt:          distances from communities to HCFs in KwaZulu–Natal (see Figure 2A) we assume that
+plos/pmed.0020050.txt:        The OEAS of ARVs in KwaZulu–Natal that we determined is complex (see Figure 3A and 3B).
+plos/pmed.0020050.txt:        official ARV rollout operational plan [17]; and all 54 hospitals in KwaZulu–Natal). In
+plos/pmed.0020050.txt:        that each individual with HIV in KwaZulu–Natal has an equal chance of receiving ARVs, can
+plos/pmed.0020050.txt:        equality of access to ARVs substantially. The current plan in KwaZulu–Natal is to use only
+plos/pmed.0020050.txt:        care in KwaZulu–Natal.
+plos/pmed.0020050.txt:        Our model has been applied to the South African province of KwaZulu–Natal, but it can be
+plos/pmed.0020050.txt:        specific objective function. As the ARV rollout commences in KwaZulu–Natal, difficult
+plos/pmed.0020067.txt:        Although benzimidazoles (BZAs) are the most commonly used agents for treating STH
+plos/pmed.0020067.txt:        repeated deworming with BZAs and praziquantel, complemented by basic sanitation and
+plos/pmed.0020067.txt:        benefits from BZAs in both populations [16,25]. Finally, a single dose of mebendazole (one
+plos/pmed.0020067.txt:        of the two major BZAs) has variable efficacy against hookworm [26], and following
+plos/pmed.0020067.txt:        with frequent and repeated use, has prompted concerns about the possible emergence of BZA
+plos/pmed.0020067.txt:        Medicine, and Oswaldo Cruz Foundation (FIOCRUZ), and sponsored by the Sabin Vaccine
+plos/pmed.0020103.txt:          Total RNA was prepared by using TRIZOL (Invitrogen) and RQ1 RNase-free DNase (Promega,
+plos/pmed.0020155.txt:        “applying this tool to the South-African province of KwaZulu–Natal, Wilson and Blower were
+plos/pmed.0020162.txt:          age, 41 y; range, 18â€“85 y). Zygosity for each pair was determined by
+plos/pmed.0020232.txt:        Zoonotic pathogens, such as 
+plos/pmed.0020232.txt:        antibiotic use remains controversial [18,27–29]. Zoonotic species could acquire resistance
+plos/pmed.0020242.txt:        10.1371/journal.pmed.0020214), Zvi Bentwich argues that before it is ready for widespread
+plos/pmed.0020249.txt:        discrepancy between the protection zidovudine (AZT) confers in animals and humans. Whereas
+```
