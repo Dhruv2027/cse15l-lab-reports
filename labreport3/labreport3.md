@@ -469,7 +469,7 @@ dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep -r "chapter" .
 ```
 
 ### `grep [<arguement>] path`
-
+The command 
 
 ```
 dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep "[Z]" plos/pmed.0020067.txt 
