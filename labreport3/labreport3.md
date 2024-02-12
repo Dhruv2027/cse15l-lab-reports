@@ -468,9 +468,8 @@ dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep -r "chapter" .
 ./911report/chapter-11.txt:                Kuala Lumpur, detailed in chapter 6. In late 1999, the National Security Agency
 ```
 
-### `grep [<arguement>] path`
-The command 
-
+### `grep [<argument>] path`
+The command looks for a given letter in the file that is written in the path. For example, if I have the letter "A" in place of `<argument`, the output consists of every line in the file that contains the captilised letter "A". As can be seen in the output below, I am searching for each time the letter capital "Z" has been used in the file `plos/pmed.0020067.txt` (note that I am in the /technical directory right now): 
 ```
 dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep "[Z]" plos/pmed.0020067.txt 
 Although benzimidazoles (BZAs) are the most commonly used agents for treating STH
@@ -480,8 +479,7 @@ of the two major BZAs) has variable efficacy against hookworm [26], and followin
 with frequent and repeated use, has prompted concerns about the possible emergence of BZA
 Medicine, and Oswaldo Cruz Foundation (FIOCRUZ), and sponsored by the Sabin Vaccine
 ```
-
-
+This function would be particularly helpful to find instances of certain acronyms, like in this case, "BZA". To expand its usage, the command will work when I type `plos/*` to search each file in the `./plos/` directory. However, the command will not work if I only type `plos/` (this will give an error saying that `plos/` is a directory). The output when I type `grep "[Z]" plos/*`:
 ```
 dhruvsharma@Dhruvs-MacBook-Pro-2 technical % grep "[Z]" plos/*                     
 plos/journal.pbio.0020040.txt:        lacZ reporter gene in transgenic mice. Venkatachalam and colleagues
@@ -633,3 +631,4 @@ plos/pmed.0020232.txt:        antibiotic use remains controversial [18,27–29].
 plos/pmed.0020242.txt:        10.1371/journal.pmed.0020214), Zvi Bentwich argues that before it is ready for widespread
 plos/pmed.0020249.txt:        discrepancy between the protection zidovudine (AZT) confers in animals and humans. Whereas
 ```
+This command is helpful if I need to find each instance of capital "Z" in each file in the `./plos/` directory. Thus, the command can be helpful when the developer wishes to find something that starts with a capital letter, but is not exactly sure which file that word is stored in. It can greatly reduce time spent searching for a specific heading or any other use.
