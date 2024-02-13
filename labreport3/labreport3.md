@@ -632,7 +632,7 @@ plos/pmed.0020242.txt:        10.1371/journal.pmed.0020214), Zvi Bentwich argues
 plos/pmed.0020249.txt:        discrepancy between the protection zidovudine (AZT) confers in animals and humans. Whereas
 ```
 This command is helpful if I need to find each instance of capital "Z" in each file in the `./plos/` directory. Thus, the command can be helpful when the developer wishes to find something that starts with a capital letter, but is not exactly sure which file that word is stored in. It can greatly reduce time spent searching for a specific heading or any other use.
-
+***
 # Citations
 1. https://www.gnu.org/software/grep/manual/grep.html
 I used ChatGPT to find how exactly the functions work.
