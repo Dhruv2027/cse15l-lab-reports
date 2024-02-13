@@ -632,3 +632,26 @@ plos/pmed.0020242.txt:        10.1371/journal.pmed.0020214), Zvi Bentwich argues
 plos/pmed.0020249.txt:        discrepancy between the protection zidovudine (AZT) confers in animals and humans. Whereas
 ```
 This command is helpful if I need to find each instance of capital "Z" in each file in the `./plos/` directory. Thus, the command can be helpful when the developer wishes to find something that starts with a capital letter, but is not exactly sure which file that word is stored in. It can greatly reduce time spent searching for a specific heading or any other use.
+
+# Citations
+1. https://www.gnu.org/software/grep/manual/grep.html
+I used ChatGPT to find how exactly the functions work.
+2. Prompt: How does grep -n work
+Output:
+```
+  The grep -n command option is used to display the line numbers of the lines in a file where a specified pattern or regular expression matches. This option is particularly useful       when you want to know the line numbers of occurrences of a pattern within a file.
+  
+  Here's how grep -n works:
+  
+  Syntax: bash
+  grep -n "pattern" file.txt
+  This command will search for the specified pattern within file.txt and display each matching line preceded by its line number.
+  Usage:
+  -n: This option is used to display the line numbers along with the matching lines.
+  "pattern": This represents the pattern or regular expression you want to search for within the file.
+  file.txt: This is the file in which you want to search for the specified pattern.
+```
+I changed the output to use my own files and my own paths, but it largely remained the same. I did the same for the following prompts as well: 
+3. Prompt: How does grep -i work
+4. Prompt: How does grep -n work
+5. Prompt: How does grep "[A-Z]" work
