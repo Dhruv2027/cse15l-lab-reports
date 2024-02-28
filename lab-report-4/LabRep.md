@@ -11,7 +11,7 @@ Here is the output:
 
 ***
 ### Step 5:
-The command I used: `git clone git@github.com:Dhruv2027/lab7.git` and then I pressed `<enter>`.
+The command I used: `git clone git@github.com:Dhruv2027/lab7.git` and then I pressed `<enter>`. The output:
 
 ![Image](SS2.png)
 
