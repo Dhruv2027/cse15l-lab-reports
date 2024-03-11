@@ -8,12 +8,12 @@ Hi, I keep failing my `merge()` method. When I use the `test.sh` file to test my
 ![Image](SS2.png)
 
 ### TA
-Hi Stephen, given your output, I can tell that you are in an infinite loop, which means one of your `while` loops is not being updated correctly. Trace through your `while` loops again and check if you update everything in that loop to ensure you break out of the loop. 
+Hi Stephen, given your output, I can tell that you are in an infinite loop (because of the timeout), which means one of your `while` loops is not being updated correctly. Trace through your `while` loops again and check if you update everything in that loop to ensure you break out of the loop. 
 
 Hint: in your output message, it says `TestTimedOutException: test timed out after 500 milliseconds at ... at ListExamples.merge(ListExamples.java:42)`. You may want to look somewhere near there.
 
 ### Student
-OH! I see now, because I was updating `index1` instead of `index2` in the third `while` loop, and was stuck in an infinite loop. That makes a lot of sense. 
+OH! I see now, because I was updating `index1` instead of `index2` in the third `while` loop, and was stuck in an infinite loop. I'll just change `index1` to `index2` and that should fix the bug. That makes a lot of sense. 
 
 ![Image](SS4.png)
 
