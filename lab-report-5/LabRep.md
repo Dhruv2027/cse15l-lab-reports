@@ -8,10 +8,16 @@ Hi, I keep failing my `merge()` method. When I use the `test.sh` file to test my
 ![Image](SS2.png)
 
 ### TA
-Hi Stephen, I think the error you are facing is in the while loop from lines 41-45. There, you check if `index2 < list2.size()`, add the the result in your arraylist, but then increment the value of `index1` rather than `index2`. For this reason, you may be in an infinite loop, with the value of `index2` always remaining less than the size of `list2`.
+Hi Stephen, given your output, I can tell that you are in an infinite loop, which means one of your `while` loops is not being updated correctly. Trace through your `while` loops again and check if you update everything in that loop to ensure you break out of the loop. 
+
+Hint: in your output message, it says `TestTimedOutException: test timed out after 500 milliseconds at ... at ListExamples.merge(ListExamples.java:42)`. You may want to look somewhere near there.
 
 ### Student
-OH! I see now, I spent like 2 hours on that bug, with nothing working. Just CS things ig. Running the bash file gives me no more errors, thank you so much! 
+OH! I see now, because I was updating `index1` instead of `index2` in the third `while` loop, and was stuck in an infinite loop. That makes a lot of sense. 
+
+![Image](SS4.png)
+
+OH YES! IT PASSED. THANK YOU SO MUCH!
 
 ![Image](SS3.png)
 
